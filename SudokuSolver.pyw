@@ -208,7 +208,7 @@ class SudokuSolver(tk.Frame):
         self.timeIntervalUp = tk.Button(self.timerFrame, width=5, height=1, text="Azalt", command=lambda: self.SetWaitingTime("Down"))
         self.timeIntervalUp.pack(side="left", padx=1, pady=5)
 
-        self.drawEnableBox = tk.Checkbutton(self, text="2000 adımda bir göster (hızlı)", variable=self.drawEnable)
+        self.drawEnableBox = tk.Checkbutton(self, text="Her adımda gösterme (hızlı)", variable=self.drawEnable)
         self.drawEnableBox.pack(side="top", padx=1, pady=1)
 
         self.buttonFrame = tk.Frame(self, width=100, height=400, background=self.backgroundColor)
