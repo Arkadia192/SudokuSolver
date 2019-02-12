@@ -364,7 +364,7 @@ class SudokuSolver(tk.Frame):
 
     def mainRoutine(self, row, column, theMove):
         self.boardState[row][column] = str(theMove)
-        if (not self.drawEnable.get() == 1):
+        if not (self.drawEnable.get() == 1):
             self.highlightGridElem(row, column)
             self.changeBoxtext(str(row)+","+str(column), str(theMove))
             self.master.update()
