@@ -490,3 +490,4 @@ if __name__ == '__main__':
     root = tk.Tk()
     app = SudokuSolver(master=root)
     app.mainloop()
+    
